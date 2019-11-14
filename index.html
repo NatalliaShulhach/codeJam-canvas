@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="fonts/Roboto.css">
+   </head>
+        <header class="top-line-block">
+            <button class="top-menu">
+                <span class="icon1">&#8801</span>   
+            </button>
+            <h1 class="title-block">CodeJam - Pallete</h1>
+            <button class="settings">
+                <span class="icon2">&#8942</span>
+            </button>
+        </header>      
+        <!----------------------------------------------------------------------> 
+    <body>
+        <canvas id="center" width="512" height="512"><img id='img' src='img/RSS.png'>
+        </canvas>
+        <script src="javaS.js"defer>
+        </script>
+        <ul class="panel-group">
+            <li class="toolbar">
+                <ul class="panel-list">
+                    <li class="panel-item">
+                        <button class="tool paint-bucket title-left-block">Paint bucket
+                        </button>
+                    </li> 
+                    <li class="panel-item">
+                        <button class="tool choose-color title-left-block">Choose color
+                        </button>
+                    </li>       
+                </ul>
+            </li>
+
+            <li class="toolbar">
+                <ul class="panel-list">
+                    <li>
+                        <button class="tool move title-left-block">Move
+                        </button>
+                    </li> 
+                    <li class="panel-item">
+                        <button class="tool transform title-left-block">Transform
+                        </button>
+                    </li>       
+                </ul>
+            </li>
+        </ul>
+            
+        <ul class="panel-group">
+            <li class="toolbar">
+                <ul class="panel-list">
+                    <li class="tool title-left-block2 ">
+                        <input type ="color" type="#color">
+                        Current color
+                    </li> 
+                    <li class="tool title-left-block2">
+                        <input type="color" type="#color">Prev Color
+                    </li> 
+                </ul>
+            </li>        
+            <li class="toolbar">
+                <ul class="panel-list">
+                    <li class="tool title-left-block2">
+                        <input type ="color" type="#color">red
+                    </li> 
+                    <li class="tool title-left-block2">
+                        <input type ="color" type="#color">blue
+                    </li>       
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="panel-group data-size">
+            <li class="toolbar">
+                <ul class="panel-list">
+                    <li class="tool title-left-block">
+                        <input  name="size" type="radio" onclick="canvas1()" value="4x4">4x4
+                    </li> 
+                    <li class="tool title-left-block">
+                        <input name="size" type="radio" onclick="canvas2()" value="32x32">32x32
+                    </li>    
+                    <li class="tool title-left-block">
+                        <input name="size" type="radio" onclick="canvas3()" value="256x256">256x256
+                    </li>   
+               <!---<li class="tool title-left-block">
+                        <input  name="size" type="radio" onclick="colorReturn()" value="user image">user image
+                    </li> ---->  
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
+   
