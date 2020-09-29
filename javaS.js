@@ -1,18 +1,19 @@
-/*async function colorReturn() {
+async function colorReturn() {
 let canvas = document.getElementById('center');
 let ctx = canvas.getContext('2d'); 
-let myColor = 'red';
+let elemColor = document.getElementById('color');
+var myColor = elemColor.value   ;
 
-document.getElementById('color').oninput = function () {
+elemColor.oninput = function() {
     myColor = this.value;
 }
 
-canvas.onmousedown = function(event) {
+canvas.onmousedown = function(_event) {
     canvas.onmousemove = function(event) {
         let x = event.offsetX;
         let y = event.offsetY;
         ctx.fillRect(x-5, y-5, 10, 10);
-        ctx.fillStyle = myColor;
+        ctx.fillStyle = `${myColor}`;
         ctx.fill();
     }
     canvas.onmouseup = function(){
@@ -20,7 +21,6 @@ canvas.onmousedown = function(event) {
  }
 }
 }
-*/
 
 async function canvas1() {
     let rectangles = await fetch('https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/4x4.json')
